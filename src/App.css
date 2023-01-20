@@ -36,3 +36,134 @@
     transform: rotate(360deg);
   }
 }
+
+nav {
+  height: 120px;
+  background: rgb(103,34,128);
+  background: linear-gradient(90deg, rgba(103,34,128,1) 0%, rgba(166,38,211,1) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  /* border: 1px solid white; */
+}
+
+.trollface-text {
+  color: white;
+  font-family: 'Karla';
+  font-weight: 700;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.nav-rightside {
+  font-family: 'Inter';
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid white; */
+
+}
+
+.nav-rightside p {
+  margin: 0;
+  padding: 0;
+}
+
+.trollface-text p {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.form {
+  width: 100%;
+  /* border: 1px solid black; */
+  margin: 80px auto;
+}
+
+.form-wrapper {
+  /* border: 1px solid black; */
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-input {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.text-input input{
+  width: 45%;
+  height: 60px;
+  border-radius: 5px;
+  font-family: 'Karla';
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: rgb(28, 28, 28);
+
+}
+
+.submit {
+  width: 100%;
+}
+
+.submit input {
+  background: rgb(103,34,128);
+  background: linear-gradient(90deg, rgba(103,34,128,1) 0%, rgba(166,38,211,1) 100%);
+  height: 60px;
+  width: 100%;
+  border-radius: 5px;
+  color: white;
+  font-family:'Karla';
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 20px;
+  border-width: 0;
+}
+
+.img-ctr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* border: 1px solid black; */
+}
+
+.top-text, .bottom-text {
+  color: white;
+  font-weight: 800;
+  font-size: 3rem;
+  position: absolute;
+  text-shadow: 3px 3px #6A6A63;
+}
+
+.top-text {
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 7%);
+}
+
+.bottom-text {
+  bottom: 2%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  /* margin: 0; */
+}
