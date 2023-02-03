@@ -9,7 +9,7 @@ export default function Navbar() {
           <p>Meme Generator</p>
         </div>
         <div className="nav-rightside">
-          <p>React Course - Project 3</p>
+          <p>Mini React Project</p>
         </div>
       </div>
     </nav>

@@ -29,13 +29,19 @@ export default function Meme() {
     })
   }
 
-  function memeText() {
+  function memeText(event) {
+
+    const {name, value} = event.target
+    console.log(name)
+    console.log(value)
     setMeme(function(oldMeme){
       return {
 
-        topText: document.getElementById('topText').value,
-        bottomText: document.getElementById('bottomText').value,
-        randomImage: oldMeme.randomImage
+        ...oldMeme,
+        [name]: value
+        // topText: document.getElementById('topText').value,
+        // bottomText: document.getElementById('bottomText').value,
+        // randomImage: oldMeme.randomImage
 
       }
     })
@@ -48,8 +54,24 @@ export default function Meme() {
       <form className="form">
         <div className='form-wrapper'>
           <div className="text-input">
-            <input id="topText" type={'text'} onKeyUp={memeText} placeholder="Shut up"></input>
-            <input id="bottomText" type={'text'} onKeyUp={memeText} placeholder="And take my money"></input>
+            <input
+              // id="topText"
+              type='text'
+              onChange={memeText}
+              placeholder="Shut up"
+              name="topText"
+              value={meme.topText}
+              />
+
+            <input
+              // id="bottomText"
+              type='text'
+              onChange={memeText}
+              placeholder="And take my money"
+              name='bottomText'
+              value={meme.bottomText}
+            />
+
           </div>
           <div className='submit'>
             <input type={'submit'} onClick={getMemeImage} value='Get a new meme image'></input>
